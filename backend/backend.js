@@ -25,7 +25,7 @@ const pusher = new Pusher({
 
 const server = app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
-const whitelist = process.env.ORIGIN.split(' ');
+const whitelist = "localhost:3000"
 const corsOptions = {
   origin(origin, callback) {
     if (!origin || whitelist.indexOf(new URL(origin).hostname) !== -1) {
