@@ -12,7 +12,7 @@ const { nanoid } = nid;
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nanoidcustom = nid.customAlphabet(alphabet, 6);
 
-const { PORT } = process.env;
+const PORT = 3000
 const Pusher = require('pusher');
 
 const pusher = new Pusher({
